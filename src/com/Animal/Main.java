@@ -37,6 +37,15 @@ public class Main {
         for (Animal a: animal) {
             AnimalName.name(a.getName());
         }
+        AnimalBehavior animalBehavior[] = new AnimalBehavior[3];
+
+        animalBehavior[0] = new Dog("Brandy","dog","Chihuahua");
+        animalBehavior[1] = new Pigeon("Tweeky","blue","robin");
+        animalBehavior[2] = new BlowFish("Willy","Goldfish","jawless");
+
+        animalBehavior[0].sleep("sleeps");
+        animalBehavior[1].sleep("Sleeps in a nest");
+        animalBehavior[2].sleep("doesn't sleep");
 
     }
 

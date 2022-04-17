@@ -1,6 +1,6 @@
 package com.Animal;
 
-public class Dog extends Mammal implements AnimalMove, AnimalName {
+public class Dog extends Mammal implements AnimalMove, AnimalName, AnimalBehavior {
     private String breed;
 
     public Dog(String breed) {
@@ -38,5 +38,10 @@ public class Dog extends Mammal implements AnimalMove, AnimalName {
     @Override
     public String move() {
         return super.move() + " by trotting ";
+    }
+
+    @Override
+    public void sleep(String sleep) {
+        System.out.println(this.getClass().getSimpleName() +" "+ sleep);
     }
 }
