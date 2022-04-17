@@ -14,20 +14,29 @@ public class Main {
         animal[4] = new Bird("Duck","White");
         animal[5] = new Pigeon("Pieg","grey","flying-bird");
 
-        animal[1].eat("Meat");
-        animal[1].getVoice();
+//        animal[1].eat("Meat");
+//        animal[1].getVoice();
+//
+//
+//        animal[2].eat("Seeds");
+//        animal[2].getVoice();
+//
+//        animal[3].eat("Seeds");
+//        animal[3].getVoice();
+//
+//        animal[4].eat("bird-seed");
+//        animal[4].getVoice();
+//
+//        animal[5].eat("pigeon-seed");
+//        animal[5].getVoice();
 
-        animal[2].eat("Seeds");
-        animal[2].getVoice();
+        for (Animal a: animal) {
+            System.out.println(a.move());
 
-        animal[3].eat("Seeds");
-        animal[3].getVoice();
-
-        animal[4].eat("bird-seed");
-        animal[4].getVoice();
-
-        animal[5].eat("pigeon-seed");
-        animal[5].getVoice();
+        }
+        for (Animal a: animal) {
+            AnimalName.name(a.getName());
+        }
 
     }
 

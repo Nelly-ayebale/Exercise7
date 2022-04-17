@@ -1,6 +1,6 @@
 package com.Animal;
 
-public class Pigeon extends Bird{
+public class Pigeon extends Bird implements AnimalMove, AnimalName{
     String species;
 
     public Pigeon() {
@@ -33,5 +33,11 @@ public class Pigeon extends Bird{
         return "Pigeon{" +
                 "species='" + species + '\'' +
                 '}';
+    }
+
+    @Override
+    public String move() {
+       return super.move()+ "by flying";
+
     }
 }

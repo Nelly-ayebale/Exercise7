@@ -1,6 +1,6 @@
 package com.Animal;
 
-public class Fish extends Animal{
+public class Fish extends Animal implements AnimalName{
     String jawless;
 
     public Fish() {
@@ -25,5 +25,10 @@ public class Fish extends Animal{
     @Override
     public void getVoice() {
         System.out.println("This fish makes no noise");
+    }
+
+    @Override
+    public String move() {
+        return super.move();
     }
 }

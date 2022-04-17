@@ -1,6 +1,6 @@
 package com.Animal;
 
-public class Bird extends Animal{
+public class Bird extends Animal implements AnimalMove, AnimalName{
     String featherColor;
 
     public Bird() {
@@ -32,5 +32,10 @@ public class Bird extends Animal{
         return "Bird{" +
                 "featherColor='" + featherColor + '\'' +
                 '}';
+    }
+
+    @Override
+    public String move() {
+        return super.move();
     }
 }
