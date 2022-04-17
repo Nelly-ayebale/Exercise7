@@ -29,7 +29,6 @@ public class Main {
         animal[5].eat("pigeon-seed");
         animal[5].getVoice();
 
-
     }
 
 }

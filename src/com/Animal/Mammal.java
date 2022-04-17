@@ -1,10 +1,14 @@
 package com.Animal;
 
-public class Mammal extends Animal {
+public class Mammal extends Animal{
     private String animal;
+    private String moves;
+
     public Mammal() {
         super();
         animal = "Animal";
+        moves = "Hopping";
+
     }
     public Mammal(String name, int age, int weight,String animal) {
         super(name, age, weight);
@@ -31,4 +35,5 @@ public class Mammal extends Animal {
                 "animal='" + animal + '\'' +
                 '}';
     }
+
 }

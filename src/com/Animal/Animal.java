@@ -1,13 +1,15 @@
 package com.Animal;
 
-public abstract class Animal {
+public abstract class Animal{
     String name;
+    String animalMove;
     int age;
     int weight;
 
     public Animal(){
         age = weight = 0;
         name = "Animal";
+        animalMove = "runs";
     }
 
     public Animal(String name, int age, int weight) {
@@ -46,6 +48,7 @@ public abstract class Animal {
     public abstract void eat(String food);
     public abstract void getVoice();
 
+
     @Override
     public String toString() {
         return "Animal{" +
@@ -54,4 +57,5 @@ public abstract class Animal {
                 ", weight=" + weight +
                 '}';
     }
+
 }

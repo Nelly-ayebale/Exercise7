@@ -1,6 +1,6 @@
 package com.Animal;
 
-public class Dog extends Mammal {
+public class Dog extends Mammal implements AnimalMove {
     private String breed;
 
     public Dog(String breed) {
@@ -34,4 +34,6 @@ public class Dog extends Mammal {
                 "breed='" + breed + '\'' +
                 '}';
     }
+
+
 }

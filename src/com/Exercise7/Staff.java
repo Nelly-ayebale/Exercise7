@@ -1,9 +1,11 @@
 package com.Exercise7;
 import java.util.*;
 
-public class Staff extends Person {
+public class Staff extends Person implements Salary {
     String education;
     String position;
+    double hours;
+    int yearsOfExperience;
 
     @Override
     public void initializer() {
@@ -13,6 +15,7 @@ public class Staff extends Person {
         education = sc.nextLine();
         System.out.println("Enter the position you are working");
         position = sc.nextLine();
+
     }
 
     @Override
@@ -20,5 +23,18 @@ public class Staff extends Person {
         super.print();
         System.out.println("Education: "+education);
         System.out.println("Position: "+position);
+
     }
+
+    @Override
+    public double salaryToPay(double hours, double rate) {
+        return hours*rate;
+    }
+
+    @Override
+    public double salaryForOvertimeAyebale(double overtimeRate, int hours) {
+        return Salary.super.salaryForOvertimeAyebale(overtimeRate, hours);
+    }
+
+
 }
